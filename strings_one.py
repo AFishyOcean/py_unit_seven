@@ -1,5 +1,5 @@
 def half_slice(word):
-    pass
+
 
 
 def no_first_last(str):
@@ -13,4 +13,12 @@ def longest(phrase):
 def title_case(sentence):
     pass
 
+def main():
+    word = 'Something'
+    print(half_slice(word))
+    print(no_first_last(str))
+    print(longest(phrase))
+    print(title_case(sentence))
 
+if __name__ == '__main__':
+    main()
