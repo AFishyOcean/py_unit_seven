@@ -3,7 +3,9 @@ def questions():
     input2 = int(input("What is the shift:"))
     input2 = input2 % 25
     input3 = input("Are you encoding(y/n)")
-    inputs = [input1, input2, input3]
+    if input3 == "n":
+        input2 = -input2
+    inputs = [input1, input2]
     return inputs
 
 def coding():
