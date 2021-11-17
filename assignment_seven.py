@@ -12,7 +12,7 @@ def coding(answers):
     sentence = answers[0]
     shift = answers[1]
     coded_sentence = ' '
-    for x in range(len(alphBET)):
+    for x in range(len(sentence)):
         letter = sentence[x]
         if letter in alphBET:
             value = alphBET.index(letter)
