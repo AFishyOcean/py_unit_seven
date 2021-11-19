@@ -7,20 +7,24 @@ def questions():
     inputs = [input1, input2, input3]
     return inputs
 
+
 def coding(answers):
     alphBET = 'abcdefghijklmnopqrstuvwxyz'
     sentence = answers[0]
     shift = answers[1]
-    coded_sentence = ' '
+    coded_sentence = ''
     for x in range(len(sentence)):
         letter = sentence[x]
         if letter in alphBET:
             value = alphBET.index(letter)
             value_shifted = value + shift
-            valueSIZEDshifted = value_shifted % 26
-            new_letter = alphBET[valueSIZEDshifted]
-        coded_sentence = coded_sentence + new_letter
+            value_sized_shifted = value_shifted % 26
+            new_letter = alphBET[value_sized_shifted]
+            coded_sentence = coded_sentence + new_letter
+        else:
+            coded_sentence = coded_sentence + letter
     return coded_sentence
+
 
 def main():
     answers = questions()
